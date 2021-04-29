@@ -1,1 +1,137 @@
-h1{color:green;}
+*{margin:0}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+#wrapper{
+	float: left;
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: 120px;
+	box-sizing: border-box;
+}
+header, main, footer {
+	float: left;
+	width: 100%;
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	background: #bee3db;
+}
+
+footer{
+	width: 100%;
+	height: 120px;
+	background: #274254;
+	margin-top: -120px;
+	color: #fff;
+	text-align: center;
+}
+
+/* header */
+.fixed-header{
+	position: relative;
+	width: 100%;
+}
+/* NAV LINKS */
+#logo-box{
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+p#logo-name{
+	padding-left: 60px;
+	line-height: 1.2;
+	font-size: 37px;
+}
+ul.nav-links{
+	float: right;
+	margin-right: 40px;
+}
+li.nav-link-button-active{
+	display: inline;
+	list-style-type: none;
+	float: left;
+	width: 100px;
+	height: 43px;
+	margin-left: 5px;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 17px;
+	color: #fff;
+	background:  #89b0ae;
+}
+li.nav-link-button a:link{
+	color: white;
+}
+li.nav-link-button a:visited{
+	color: #274254;
+}
+li.nav-link-button a:hover{
+	color: white;
+}
+li.nav-link-button a:active {
+	color: white;
+	/* background: #274254; */
+}
+li.nav-link-button{
+	display: inline;
+	list-style-type: none;
+	float: left;
+	width: 100px;
+	height: 43px;
+	margin-left: 5px;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 17px;
+}
+/* home page */
+#home-main-title{
+	text-align: center;
+}
+
+.home-main{
+	padding: 50px 50px 50px 50px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.tile-container{
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+}
+.home-main-tile{
+	display: inline-block;
+	position: relative;
+	height: 450px;
+	width: 675px;
+	background-color: teal;
+	box-sizing: border-box;
+}
+
+.hmt-image-text{
+	position: absolute;
+	margin: 0 auto;
+	top: 50px;
+	left: 50px;
+	font-size: 50px;
+	text-align: center;
+}
+
+/* Contact form holder */
+.form-holder{
+	width: 650px;
+	margin: 0 auto;
+	background-color: whitesmoke;
+}
+.contact-main{
+	height: 500px;
+	background: #af3800;
+}

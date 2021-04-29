@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Contact | My Website</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../assets/styles.css">
-		<title>Bloomerang</title>
 	</head>
 	<body>
-	  <div>
-	    <header>
-		  <nav>
-			<div>
-			  <ul>
-				<li>
-				  <a href="../index.html">Home</a>
-				    </li>
-					  <li>
-						<a href="../about/about.html">About</a>
-					  </li>
-					  <li>
-						Contact
-					  </li>
-					</ul>
+		<div id="wrapper">
+			<header>
+				<ul class="nav-links">
+					<div id="logo-box">
+						<p>Bloomerang</p>
 					</div>
-				</nav>
+					<li class="nav-link-button">
+						<a href="../index.html">Home</a>
+					</li>
+					<li class="nav-link-button">
+						<a href="../about/about.html">About</a>
+					</li>
+					<li class="nav-link-button-active">Contact</li>
+				</ul>
 			</header>
-		<main>
-		  <h1>Our flowers will always make you come back</h1>
-		</main>
+
+			<main class="contact-main">
+				<h1>Contact</h1>
+				<div class="form-holder">
+					<form method="get" action="../index.html">
+						
+						<p>Would you recommend us to a friend?</p>
+						<label>
+							<input type="radio"
+									class="recommend-us"
+									name="user-recommend"
+									value="definitely"
+									>Definitely</label>
+						<label>
+							<input type="radio"
+									class="recommend-us"
+									name="user-recommend"
+									value="maybe"
+									>Maybe</label>
+						<label>
+							<input type="radio"
+									class="recommend-us"
+									name="user-recommend"
+									value="not-sure"
+									>Not sure</label>
+						<p>What would you most recommend us for?</p>
+						<select>
+							<option disabled selected value>Select an option</option>
+							<option value="customer-service">Customer service</option>
+							<option value="range-of-plants">Range of plants</option>
+							<option value="range-of-bouquets">Range of bouquets</option>
+						</select>
+
+						<p>What would you like to see more of in our workshops?</p>
+							<input type="checkbox" name="">
+						<label>Enter name</label>
+						<input type="text" name="fullname"><br>
+						<label>Enter email</label>
+						<input type="email" name="email" placeholder="Enter email"><br>
+						<label>Description</label>
+						<textarea name="description"></textarea><br>
+						<input type="submit" value="Submit">
+							
+					</form>
+				</div>
+			</main>
+		</div>
 		<footer>
-		  &copy;
+			&copy; 2020
 		</footer>
-	  </div>
+
 	</body>
 </html>
