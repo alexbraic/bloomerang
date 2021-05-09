@@ -59,7 +59,7 @@ li.nav-link-button-active{
 	display: inline;
 	list-style-type: none;
 	float: left;
-	width: 100px;
+	width: 200px;
 	height: 43px;
 	margin-left: 5px;
 	font-size: 18px;
@@ -85,7 +85,7 @@ li.nav-link-button{
 	display: inline;
 	list-style-type: none;
 	float: left;
-	width: 100px;
+	width: 200px;
 	height: 43px;
 	margin-left: 5px;
 	font-size: 18px;
@@ -93,37 +93,87 @@ li.nav-link-button{
 	padding-top: 17px;
 }
 /* home page */
+/* #home-main-box{
+	width: 100%;
+	height: 100%;
+	background: teal;
+} */
+
+#home-left-main{
+	float: left;
+	width: 50%;
+	padding:50px 0px 0px 50px;
+	box-sizing: border-box;
+	/* background-color: #bee3db; */
+}
+#middle{
+	position: absolute;
+	top: 250px;
+	height: 200px;
+	width: 100%;
+	color: whitesmoke;
+	background-color: tomato;
+	padding-left: 50px;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+#right-side{
+	float: left;
+	width: 50%;
+	height: 100vh;
+}
+#main-right-image{
+	position: relative;
+	height: 600px;
+	width: 399px;
+	margin: 0 auto;
+	z-index: 1;
+	box-sizing: border-box;
+}
+/* main page image links */
 #home-main-title{
 	text-align: center;
 }
-
-.home-main{
-	padding: 50px 50px 50px 50px;
+.home-top{
+	min-height: 100vh;
+	width: 100%;
+	background-color: whitesmoke;
+	box-sizing: border-box;
+	/* border-bottom: #af3800 10px; */
+}
+.home-bottom{
+	min-height: 100vh;
+	padding: 5px 50px 5px 50px;
 	box-sizing: border-box;
 	text-align: center;
+	background-color: whitesmoke;
+	box-sizing: border-box;
 }
 .tile-container{
-	position: relative;
+	/* position: relative; */
+	float: left;
 	width: 100%;
 	box-sizing: border-box;
 }
 .home-main-tile{
 	display: inline-block;
-	position: relative;
-	height: 450px;
-	width: 675px;
-	background-color: teal;
+	/* position: relative; */
+	height: 310px;
+	width: 450px;
+	background-color: whitesmoke;
+	margin: 20px;
+	border: 1px solid #af3800;
 	box-sizing: border-box;
 }
 
-.hmt-image-text{
-	position: absolute;
+/* .hmt-image-text{
+	position: relative;
 	margin: 0 auto;
-	top: 50px;
-	left: 50px;
+	top: 5px;
+	left: 5px;
 	font-size: 50px;
-	text-align: center;
-}
+	text-align: center; 
+} */
 
 /* Contact form holder */
 .form-holder{
@@ -132,6 +182,11 @@ li.nav-link-button{
 	background-color: whitesmoke;
 }
 .contact-main{
-	height: 500px;
+	height: 600px;
 	background: #af3800;
+}
+
+p.contact-q{
+	font-size: 20px;
+	font-weight: 900;
 }
