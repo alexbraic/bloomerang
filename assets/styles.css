@@ -1,4 +1,5 @@
-*{margin:0}
+*{margin:0;
+box-sizing: border-box;}
 
 html, body{
 	height: 100%;
@@ -10,7 +11,6 @@ html, body{
 	width: 100%;
 	min-height: 100%;
 	padding-bottom: 120px;
-	box-sizing: border-box;
 }
 header, main, footer {
 	float: left;
@@ -60,7 +60,7 @@ li.nav-link-button-active{
 	list-style-type: none;
 	float: left;
 	width: 200px;
-	height: 43px;
+	height: 60px;
 	margin-left: 5px;
 	font-size: 18px;
 	text-align: center;
@@ -103,7 +103,6 @@ li.nav-link-button{
 	float: left;
 	width: 50%;
 	padding:50px 0px 0px 50px;
-	box-sizing: border-box;
 	/* background-color: #bee3db; */
 }
 #middle{
@@ -115,7 +114,6 @@ li.nav-link-button{
 	background-color: tomato;
 	padding-left: 50px;
 	font-size: 20px;
-	box-sizing: border-box;
 }
 #right-side{
 	float: left;
@@ -128,7 +126,6 @@ li.nav-link-button{
 	width: 399px;
 	margin: 0 auto;
 	z-index: 1;
-	box-sizing: border-box;
 }
 /* main page image links */
 #home-main-title{
@@ -138,7 +135,6 @@ li.nav-link-button{
 	min-height: 100vh;
 	width: 100%;
 	background-color: whitesmoke;
-	box-sizing: border-box;
 	/* border-bottom: #af3800 10px; */
 }
 .home-bottom{
@@ -147,13 +143,11 @@ li.nav-link-button{
 	box-sizing: border-box;
 	text-align: center;
 	background-color: whitesmoke;
-	box-sizing: border-box;
 }
 .tile-container{
 	/* position: relative; */
 	float: left;
 	width: 100%;
-	box-sizing: border-box;
 }
 .home-main-tile{
 	display: inline-block;
@@ -163,7 +157,6 @@ li.nav-link-button{
 	background-color: whitesmoke;
 	margin: 20px;
 	border: 1px solid #af3800;
-	box-sizing: border-box;
 }
 
 /* .hmt-image-text{
@@ -176,17 +169,52 @@ li.nav-link-button{
 } */
 
 /* Contact form holder */
+#form-title{
+	text-align: center;
+	height: 65px;
+	margin-bottom: 30px;
+	background-color: tomato;
+	color: whitesmoke;
+}
+
 .form-holder{
 	width: 650px;
 	margin: 0 auto;
-	background-color: whitesmoke;
+	padding: 20px;
+	border-radius: 3px;
+	background-color: #bee3db;
 }
+
 .contact-main{
-	height: 600px;
-	background: #af3800;
+	height: 100vh;
+	padding: 60px 0px 0px 0px;
+	/* background: #af3800; */
+	background-color: azure
 }
 
 p.contact-q{
+	padding-left: 5px;
 	font-size: 20px;
 	font-weight: 900;
+}
+.labels{
+	font-size: 20px;
+	margin-left: 5px;
+}
+.input-shape{
+	border: none;
+	width: 100%;
+	height: 33px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.recommend-us{
+	margin-bottom: 20px;
+}
+.options{
+	margin-bottom: 20px;
+}	
+form textarea{
+	width: 100%;
+	min-height: 100px;
 }

@@ -23,36 +23,50 @@
 			</header>
 
 			<main class="contact-main">
-				<h1>Contact</h1>
+				<div id="form-title">
+					<h1>Contact</h1>
+					<h3>Thank you for taking the time to fill out our survey!</h3>
+				</div>				
+
 				<div class="form-holder">
-					<form method="get" action="../index.html">
-						<label>Enter name</label>
-						<input type="text" name="fullname"><br>
-						<label>Enter email</label>
-						<input type="email" name="email" placeholder="Enter email"><br>
+					<form id="feedback-form" method="get" action="../index.html">
+						<label id="name-label" for="name-field" class="labels">Name</label>
+						<input 
+								type="text"
+								name="fullname"
+								id="name-field"
+								class="input-shape"
+								placeholder="Enter your name"><br>
+						<label id="email-label" for="email-field" class="labels">Email</label>
+						<input 
+								type="email"
+								name="email"
+								id="email-field"
+								class="input-shape"
+								placeholder="Enter your email"><br>
 						
 						<p class="contact-q">Would you recommend us to a friend?</p>
 						<label>
 							<input type="radio"
 									class="recommend-us"
-									name="user-recommend"
+									name="definitely-recommend"
 									value="definitely"
 									>Definitely</label>
 						<label>
 							<input type="radio"
 									class="recommend-us"
-									name="user-recommend"
+									name="maybe-recommend"
 									value="maybe"
 									>Maybe</label>
 						<label>
 							<input type="radio"
 									class="recommend-us"
-									name="user-recommend"
+									name="unsure-recommend"
 									value="not-sure"
 									>Not sure</label>
 
 						<p class="contact-q">What would you most recommend us for?</p>
-						<select>
+						<select class="options">
 							<option disabled selected value>Select an option</option>
 							<option value="customer-service">Customer service</option>
 							<option value="range-of-plants">Range of plants</option>
