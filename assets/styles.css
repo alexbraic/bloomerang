@@ -168,6 +168,40 @@ li.nav-link-button{
 	text-align: center; 
 } */
 
+
+/* plant care */
+.care-box{
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.care-box h1{
+	text-align: center;
+	margin-bottom: 25px;
+}
+.care-box p{
+	font-size: 18px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+.care-img{
+	width: 90%;
+	height: 400px;
+	margin: auto;
+	background: cadetblue;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.care-box h2{
+	margin-bottom: 20px;
+}
+.care-box ul li{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+
 /* Contact form holder */
 #form-title{
 	text-align: center;
