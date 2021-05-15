@@ -19,10 +19,12 @@ header, main, footer {
 
 header{
 	width: 100%;
-	height: 60px;
+	height: 120px;
 	background: #bee3db;
 }
-
+header div{
+	display: inline-block;
+}
 footer{
 	width: 100%;
 	height: 120px;
@@ -46,6 +48,10 @@ footer{
 	width: 50px;
 	background: red;
 }
+.navigation{
+	position: relative;
+	top: 60px;
+}
 p#logo-name{
 	padding-left: 60px;
 	line-height: 1.2;
@@ -54,6 +60,7 @@ p#logo-name{
 ul.nav-links{
 	float: right;
 	margin-right: 40px;
+	overflow: hidden;
 }
 li.nav-link-button-active{
 	display: inline;
@@ -92,13 +99,8 @@ li.nav-link-button{
 	text-align: center;
 	padding-top: 17px;
 }
-/* home page */
-/* #home-main-box{
-	width: 100%;
-	height: 100%;
-	background: teal;
-} */
 
+/* main content */
 #home-left-main{
 	float: left;
 	width: 50%;
