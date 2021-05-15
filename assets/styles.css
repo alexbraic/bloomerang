@@ -142,7 +142,6 @@ li.nav-link-button a:active {
 .home-bottom{
 	min-height: 100vh;
 	padding: 5px 50px 5px 50px;
-	box-sizing: border-box;
 	text-align: center;
 	background-color: whitesmoke;
 }
@@ -159,18 +158,46 @@ li.nav-link-button a:active {
 	background-color: whitesmoke;
 	margin: 20px;
 	border: 1px solid #af3800;
+	border-top: 0px;
 }
+/* weddings */
+#wedding-top-image img{
+	width: 100%;
+	background-size: cover;
+}
+.wedding-top h1{
+	text-align: center;
+	margin: 100px 0px 100px;
 
-/* .hmt-image-text{
-	position: relative;
+}
+.wedding-top h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.wedding-text{
+	width: 70%;
 	margin: 0 auto;
-	top: 5px;
-	left: 5px;
-	font-size: 50px;
-	text-align: center; 
-} */
-
-
+	text-align: justify;
+}
+#top-section{
+	margin-bottom: 30px;
+}
+#top-section p{
+	margin-bottom: 10px;
+}
+.bouquet-image-box{
+	width: 1400px;
+	display: grid;
+	align-content:space-evenly;
+	grid-template-columns: auto auto auto;
+	margin: 0 auto;
+}
+.bouquet-image{
+	margin: 5px 5px 10px 5px;
+	height: 300px;
+	width: 450px;
+	background-color: violet;
+}
 /* plant care */
 .care-box{
 	width: 60%;
@@ -191,9 +218,10 @@ li.nav-link-button a:active {
 	width: 90%;
 	height: 400px;
 	margin: auto;
-	background: cadetblue;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	background-image: url(../assets/images/plant_care-1504-1004.jpeg);
+	background-size: cover;
 }
 .care-box h2{
 	margin-bottom: 20px;
