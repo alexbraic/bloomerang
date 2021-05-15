@@ -109,17 +109,17 @@ li.nav-link-button a:active {
 #middle{
 	position: absolute;
 	top: 300px;
-	height: 200px;
 	width: 100%;
 	color: whitesmoke;
 	background-color: tomato;
-	padding-left: 50px;
+	padding: 10px 0px 10px 50px;
 	font-size: 20px;
 }
 #right-side{
 	float: left;
 	width: 50%;
 	height: 100vh;
+	padding-left: 200px;
 }
 #main-right-image{
 	position: relative;
@@ -131,7 +131,10 @@ li.nav-link-button a:active {
 /* main page image links */
 #home-main-title{
 	text-align: center;
-	padding: 20px 0px 20px 0px;
+	padding: 30px 0px 30px 0px;
+}
+#intro{
+	width: 900px;
 }
 .home-top{
 	min-height: 100vh;
@@ -146,13 +149,11 @@ li.nav-link-button a:active {
 	background-color: whitesmoke;
 }
 .tile-container{
-	/* position: relative; */
 	float: left;
 	width: 100%;
 }
 .home-main-tile{
 	display: inline-block;
-	/* position: relative; */
 	height: 310px;
 	width: 450px;
 	background-color: whitesmoke;
@@ -160,19 +161,31 @@ li.nav-link-button a:active {
 	border: 1px solid #af3800;
 	border-top: 0px;
 }
-/* weddings */
+
+/* bouquets page */
+
+
+
+
+/* weddings page*/
 #wedding-top-image img{
 	width: 100%;
 	background-size: cover;
 }
-.wedding-top h1{
+.wedding-content{
+	margin-bottom: 50px;
+}
+.wedding-content h1{
 	text-align: center;
 	margin: 100px 0px 100px;
 
 }
-.wedding-top h2{
+.wedding-content h2{
 	text-align: center;
 	margin-bottom: 30px;
+}
+#bottom-h2{
+	padding-top: 30px;
 }
 .wedding-text{
 	width: 70%;
@@ -183,6 +196,16 @@ li.nav-link-button a:active {
 	margin-bottom: 30px;
 }
 #top-section p{
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+#bottom-section{
+	margin-bottom: 30px;
+}
+#bottom-section article ul li span{
+	font-weight: 900;
+}
+#bottom-section article ul li{
 	margin-bottom: 10px;
 }
 .bouquet-image-box{
@@ -198,6 +221,32 @@ li.nav-link-button a:active {
 	width: 450px;
 	background-color: violet;
 }
+.form-title{
+	margin-top: 100px;
+	text-align: center;
+}
+#wedding-form{
+	margin-top: 20px;
+}
+
+/* corporate page */
+#corporate-main-title h1{
+	margin-top: 100px;
+	text-align: center;
+}
+.corporate-image-box{
+	width: 1400px;
+	display: grid;
+	align-content:space-evenly;
+	grid-template-columns: auto auto auto;
+	margin: 0 auto;
+}
+.corporate-image{
+	height: 300px;
+	width: 450px;
+	background-color: violet;
+}
+
 /* plant care */
 .care-box{
 	width: 60%;
@@ -292,7 +341,14 @@ p.contact-q{
 .options{
 	margin-bottom: 20px;
 }	
+form .submit-button{
+	height: 30px;
+	width: 90px;
+	cursor: pointer;
+}
+
 form textarea{
 	width: 100%;
 	min-height: 100px;
+	border-radius: 3px;
 }
