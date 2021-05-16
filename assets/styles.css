@@ -230,7 +230,6 @@ li.nav-link-button a:active {
 }
 
 /* corporate page */
-
 #corporate-main-title h1{
 	margin-top: 100px;
 	text-align: center;
@@ -310,16 +309,23 @@ li.nav-link-button a:active {
 	display: inline-block;
 }
 .contact-main .contact-info img {
-	height: 200px;
-	width: 20px;
-	background-color: teal;
+	height: 400px;
+	width: 600px;
+	background-size: cover;
+}
+.contact-info h4{
+	font-size: 18px;
+}
+.contact-info address{
+	margin-bottom: 30px;
 }
 #contact-form-title{
 	text-align: center;
-	height: 65px;
+	height: 70px;
 	margin-bottom: 30px;
 	background-color: tomato;
 	color: whitesmoke;
+	padding-top: 10px;
 }
 
 .form-holder{
