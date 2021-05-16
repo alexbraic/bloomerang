@@ -34,11 +34,14 @@ footer{
 	text-align: center;
 }
 
+/* ---------------------------------------------------------------------- */
 /* header */
 .fixed-header{
 	position: relative;
 	width: 100%;
 }
+
+/* ---------------------------------------------------------------------- */
 /* NAV LINKS */
 #logo-box{
 	position: absolute;
@@ -100,7 +103,34 @@ li.nav-link-button a:active {
 	color: white;
 }
 
+/* ---------------------------------------------------------------------- */
+/* footer */
+.footer-box-holder{
+	width: 80%;
+	margin: 0 auto;
+}
+.footer-boxes{
+	float: left;
+	width: 25%;
+	height: 200px;
+}
+.footer-boxes table{
+	margin: 0 auto;
+	padding-top: 20px;
+}
+footer th{
+	text-align: center;
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+}
+footer table{
+	text-align: left;
+}
+footer a:visited{
+	color: white;
+}
 
+/* ------------------------------------------------------------- */
 /* main content */
 #home-left-main{
 	float: left;
@@ -134,10 +164,13 @@ li.nav-link-button a:active {
 	background-color: #fff;
 	box-shadow: 10px 5px 5px rgba(39, 66, 84, .2);
 }
+
+/* ---------------------------------------------------------------------- */
 /* main page image links */
 #home-main-title{
 	text-align: center;
 	padding: 30px 0px 30px 0px;
+	color: #a02c18;
 }
 #intro{
 	width: 900px;
@@ -168,28 +201,36 @@ li.nav-link-button a:active {
 	border-top: 0px;
 }
 
-/* bouquets page */
 
-.bouquet-image-holder{
-	margin-left: 50px;
+/* ---------------------------------------------------------------------- */
+/* bouquets page */
+.bouquets-main-box{
+	width: 100%;
+}
+.bouquets-main-box h1{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 .bouquet-basket{
 	width: 1400px;
-	display: inline-grid;
+	display: inline-block;
 	/* align-content:space-evenly;
 	grid-template-columns: auto auto auto; */ 
 	background-color: aqua;
+	margin: 0 auto;
 }
 .bouquet-basket img{
 	height: 267px;
 	width: 400px;
 	background-color: #af3800;
-	margin-left: 47px;
 }
-.bouquet-category{
-	float: left;
+.bouquet-basket .bouquet-category{
+	margin: 0 auto;
 }
 
+
+/* ---------------------------------------------------------------------- */
 /* weddings page*/
 #wedding-top-image img{
 	width: 100%;
@@ -201,29 +242,34 @@ li.nav-link-button a:active {
 .wedding-content h1{
 	text-align: center;
 	margin: 100px 0px 100px;
+	color: #af3800;
 
 }
 .wedding-content h2{
 	text-align: center;
 	margin-bottom: 30px;
+	color: #af3800;
 }
 #bottom-h2{
-	padding-top: 30px;
+	padding-top: 50px;
 }
+
 .description-text{
 	width: 70%;
 	margin: 0 auto;
 	text-align: justify;
+	color: #af3800;
 }
-#top-section{
+.sections{
 	margin-bottom: 30px;
 }
-#top-section p{
+.sections p{
 	margin-bottom: 10px;
 	font-size: 18px;
 }
 #bottom-section{
 	margin-bottom: 30px;
+	font-size: 18px;
 }
 #bottom-section article ul li span{
 	font-weight: 900;
@@ -247,20 +293,22 @@ li.nav-link-button a:active {
 .form-title{
 	margin-top: 100px;
 	text-align: center;
+	color: #af3800;
 }
 #wedding-form{
 	margin-top: 20px;
 }
 
-/* corporate page */
-#corporate-main-title h1{
-	margin-top: 100px;
-	text-align: center;
-}
-.corporate-top h1{
-	text-align: center;
-	margin: 0px 0px 50px;
 
+/* ---------------------------------------------------------------------- */
+/* corporate page */
+.corporate-top{
+	margin-top: 100px;
+}
+.corporate-main-title{
+	text-align: center;
+	color: #a02c18;
+	margin: 0px 0px 50px;
 }
 .corporate-image-box{
 	width: 1400px;
@@ -279,29 +327,78 @@ li.nav-link-button a:active {
 	padding-top: 30px;
 	font-size: 18px;
 	text-align: center;
+	color: #af3800;
 }
-
-
 #corporate-form{
 	margin-top: 20px;
 	margin-bottom: 50px;
 }
 
+/* ---------------------------------------------------------------------- */
+/* workshops page */
+.workshops-top{
+	margin-top: 100px;
+}
+#workshop-main-title{
+	text-align: center;
+	color: #a02c18;
+	margin-bottom: 50px;
+}
+.sections article span{
+	font-weight: 900;
+}
+#workshop-bottom-section-box{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.workshop-image-box{
+	width: 80%;
+	margin: 0 auto;
+}
+.workshop-image{
+	width: 33%;
+	display: inline-block;
+	margin-top: 30px;
+}
+.workshop-image div{
+	width: 322px;
+	height: 472px;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
+	background-color: white;
+	border: 1px solid #af3800;
+}
+.workshop-image img{
+	width: 300px;
+	margin: 0 auto;
+}
+.bouquets-helpful-links{
+	text-align: center;
+	font-size: 16px;
+	color: #af3800;
+}
+
+
+/* ---------------------------------------------------------------------- */
 /* plant care */
-.care-box{
+.care-box {
 	width: 60%;
 	margin: 0 auto;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
+
 .care-box h1{
 	text-align: center;
 	margin-bottom: 25px;
+	color: #af3800;
 }
 .care-box p{
 	font-size: 18px;
 	text-align: justify;
 	margin-bottom: 20px;
+	color: #af3800;
 }
 .care-img{
 	width: 90%;
@@ -314,14 +411,19 @@ li.nav-link-button a:active {
 }
 .care-box h2{
 	margin-bottom: 20px;
+	color: #af3800;
 }
 .care-box ul li{
 	font-size: 18px;
 	margin-bottom: 10px;
+	color: #af3800;
 }
 
-
+/* ---------------------------------------------------------------------- */
 /* Contact form holder */
+.contact-main{
+	background-color: whitesmoke;
+}
 .contact-info{
 	width: 100%;
 	margin-bottom: 100px;
