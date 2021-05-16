@@ -20,7 +20,7 @@ header, main, footer {
 header{
 	width: 100%;
 	height: 120px;
-	background: #bee3db;
+	background: #fcf8ee;
 }
 header div{
 	display: inline-block;
@@ -52,8 +52,10 @@ footer{
 	float: right;
 	position: relative;
 	top: 60px;
-	background-color: #89b0ae;
+	/* background-color: #89b0ae; */
+	background-color: #e9806e;
 	width: 100%;
+	font-weight: 900;
 }
 p#logo-name{
 	padding-left: 60px;
@@ -82,14 +84,14 @@ li.nav-link-button-active{
 	font-size: 16px;
 	text-align: center;
 	padding: 20px 20px 20px 20px;
-	color: #274254;
-	background-color: #bee3db;
+	color: #a02c18;
+	background-color: #fcf8ee;
 }
 li.nav-link-button a:link{
 	color: white;
 }
 li.nav-link-button a:visited{
-	color: #274254;
+	color: white;
 }
 li.nav-link-button a:hover{
 	color: white;
@@ -167,19 +169,26 @@ li.nav-link-button a:active {
 }
 
 /* bouquets page */
+
+.bouquet-image-holder{
+	margin-left: 50px;
+}
 .bouquet-basket{
-	width: 900px;
-	display: grid;
-	align-content:space-evenly;
-	grid-template-columns: auto auto auto;
-	margin: 0 auto;
+	width: 1400px;
+	display: inline-grid;
+	/* align-content:space-evenly;
+	grid-template-columns: auto auto auto; */ 
+	background-color: aqua;
 }
 .bouquet-basket img{
 	height: 267px;
 	width: 400px;
 	background-color: #af3800;
+	margin-left: 47px;
 }
-
+.bouquet-category{
+	float: left;
+}
 
 /* weddings page*/
 #wedding-top-image img{
@@ -347,7 +356,8 @@ li.nav-link-button a:active {
 	margin: 0 auto;
 	padding: 20px;
 	border-radius: 3px;
-	background-color: #bee3db;
+	background-color: #e4644e;
+	color: white;
 }
 
 .contact-main{
