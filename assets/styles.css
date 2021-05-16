@@ -206,26 +206,32 @@ footer a:visited{
 /* bouquets page */
 .bouquets-main-box{
 	width: 100%;
+	padding: 30px 50px 50px 50px;
 }
 .bouquets-main-box h1{
 	text-align: center;
-	padding-top: 30px;
 	padding-bottom: 50px;
+	color: #af3800;
 }
 .bouquet-basket{
-	width: 1400px;
-	display: inline-block;
-	/* align-content:space-evenly;
-	grid-template-columns: auto auto auto; */ 
-	background-color: aqua;
+	width: 100%;	
+}
+.bouquet-category{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: 0 auto;
+}
+.bouquet-category div{
 	margin: 0 auto;
 }
 .bouquet-basket img{
 	height: 267px;
 	width: 400px;
-	background-color: #af3800;
 }
-.bouquet-basket .bouquet-category{
+.bouquets-main-box p{
+	width: 70%;
+	font-size: 18px;
+	color: #af3800;
 	margin: 0 auto;
 }
 
