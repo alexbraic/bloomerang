@@ -123,10 +123,14 @@ li.nav-link-button a:active {
 }
 #main-right-image{
 	position: relative;
-	height: 600px;
-	width: 399px;
+	height: 622px;
+	width: 422px;
+	padding: 10px;
 	margin: 0 auto;
 	z-index: 1;
+	border: 1px solid #af3800;
+	background-color: #fff;
+	box-shadow: 10px 5px 5px rgba(39, 66, 84, .2);
 }
 /* main page image links */
 #home-main-title{
@@ -163,8 +167,18 @@ li.nav-link-button a:active {
 }
 
 /* bouquets page */
-
-
+.bouquet-basket{
+	width: 900px;
+	display: grid;
+	align-content:space-evenly;
+	grid-template-columns: auto auto auto;
+	margin: 0 auto;
+}
+.bouquet-basket img{
+	height: 267px;
+	width: 400px;
+	background-color: #af3800;
+}
 
 
 /* weddings page*/
