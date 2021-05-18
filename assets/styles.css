@@ -28,7 +28,7 @@ header div{
 footer{
 	width: 100%;
 	height: 200px;
-	background: #274254;
+	background: #792315;
 	margin-top: -200px;
 	color: #fff;
 	text-align: center;
@@ -164,6 +164,22 @@ footer a:visited{
 	background-color: #fff;
 	box-shadow: 10px 5px 5px rgba(39, 66, 84, .2);
 }
+#homepage-owner-box{
+	width: 100%;
+	height: 300px;
+	background-color: #e9806e;
+}
+
+#homepage-owner-description{
+	width: 70%;
+	height: 300px;
+	font-size: 18px;
+	color: whitesmoke;
+	margin: 0 auto;
+}
+
+
+
 
 /* ---------------------------------------------------------------------- */
 /* main page image links */
@@ -179,7 +195,6 @@ footer a:visited{
 	min-height: 100vh;
 	width: 100%;
 	background-color: whitesmoke;
-	/* border-bottom: #af3800 10px; */
 }
 .home-bottom{
 	min-height: 100vh;
@@ -429,15 +444,20 @@ footer a:visited{
 /* Contact form holder */
 .contact-main{
 	background-color: whitesmoke;
+	height: fit-content;
+	padding: 100px 0px 60px 0px;
 }
+
 .contact-info{
 	width: 100%;
 	margin-bottom: 100px;
 	text-align: center;
+	color: #af3800;
 }
 .contact-main .contact-info h1 {
 	margin-bottom: 20px;
 	display: inline-block;
+	color: #af3800;
 }
 .contact-main .contact-info img {
 	height: 400px;
@@ -446,6 +466,7 @@ footer a:visited{
 }
 .contact-info h4{
 	font-size: 18px;
+	color: #af3800;
 }
 .contact-info address{
 	margin-bottom: 30px;
@@ -468,12 +489,7 @@ footer a:visited{
 	color: white;
 }
 
-.contact-main{
-	height: fit-content;
-	padding: 100px 0px 60px 0px;
-	/* background: #af3800; */
-	background-color: azure
-}
+
 
 p.contact-q{
 	padding-left: 5px;
