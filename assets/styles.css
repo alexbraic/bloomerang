@@ -335,6 +335,7 @@ footer table td{
 	margin-top: 100px;
 	text-align: center;
 	color: #af3800;
+	font-family: 'Raleway', sans-serif;
 }
 #wedding-form{
 	margin-top: 20px;
@@ -506,6 +507,7 @@ footer table td{
 	background-color: tomato;
 	color: whitesmoke;
 	padding-top: 10px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .form-holder{
@@ -516,9 +518,28 @@ footer table td{
 	background-color: #e4644e;
 	color: white;
 }
-
-
-
+.form-holder label{
+	margin-left: 10px;
+	font-family: 'Cabin', sans-serif;
+}
+.form-holder input{
+	font-family: 'Raleway', sans-serif;
+	padding-left: 5px;
+}
+#name-error-msg{
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	padding-left: 5px;
+	color: red;
+	display: none;
+}
+#email-error-msg{
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	padding-left: 5px;
+	color: red;
+	display: none;
+}
 p.contact-q{
 	padding-left: 5px;
 	font-size: 20px;
@@ -526,7 +547,6 @@ p.contact-q{
 }
 .labels{
 	font-size: 20px;
-	margin-left: 5px;
 }
 .input-shape{
 	border: none;
@@ -536,19 +556,29 @@ p.contact-q{
 	margin-bottom: 20px;
 }
 .recommend-us{
+	margin-left: 5px;
 	margin-bottom: 20px;
 }
 .options{
+	margin-left: 15px;
 	margin-bottom: 20px;
-}	
+}
+.submit-holder{
+	width: 100%;
+}
 form .submit-button{
+	font-family: inherit;
+	font-size: 15px;
+	margin-top: 20px;
 	height: 30px;
-	width: 90px;
+	width: 100%;
 	cursor: pointer;
 }
 
 form textarea{
 	width: 100%;
 	min-height: 100px;
+	margin-top: 20px;
 	border-radius: 3px;
+	padding-left: 5px;
 }
