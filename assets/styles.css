@@ -50,6 +50,11 @@ footer{
 	height: 50px;
 	width: 50px;
 	background: red;
+	font-family: 'Pattaya', sans-serif;
+	color: #af3800;
+}
+#logo-box p{
+	margin-top: 8px;
 }
 .navigation{
 	float: right;
@@ -129,7 +134,12 @@ footer table{
 footer a:visited{
 	color: white;
 }
-
+footer table td{
+	text-align: center;
+}
+#copyright{
+	margin-top: 90px;
+}
 /* ------------------------------------------------------------- */
 /* main content */
 #home-back{
@@ -145,6 +155,7 @@ footer a:visited{
 	margin-top: 30px;
 	height: 200px;
 	color: #a02c18;
+	font-family: 'Libre Caslon Text', serif;
 }
 #home-mission{
 	float: left;
@@ -153,7 +164,8 @@ footer a:visited{
 	color: whitesmoke;
 	background-color: tomato;
 	padding: 10px 0px 15px 50px;
-	font-size: 20px;
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
 }
 #intro{
 	width: 900px;
@@ -174,10 +186,11 @@ footer a:visited{
 #homepage-owner-description{
 	width: 60%;
 	height: auto;
-	font-size: 20px;
+	font-size: 16px;
 	color: whitesmoke;
 	margin-left: 30px;
 	text-align: justify;
+	font-family: 'Roboto Slab', serif;
 }
 
 #main-right-image{
@@ -266,12 +279,13 @@ footer a:visited{
 	text-align: center;
 	margin: 100px 0px 100px;
 	color: #af3800;
-
+	font-family: 'Libre Caslon Text', serif;
 }
 .wedding-content h2{
 	text-align: center;
 	margin-bottom: 30px;
 	color: #af3800;
+	font-family: 'Libre Caslon Text', serif;
 }
 #bottom-h2{
 	padding-top: 50px;
@@ -282,20 +296,24 @@ footer a:visited{
 	margin: 0 auto;
 	text-align: justify;
 	color: #af3800;
+	font-family: 'Roboto Slab', serif;
 }
 .sections{
 	margin-bottom: 30px;
 }
 .sections p{
 	margin-bottom: 10px;
-	font-size: 18px;
+	font-size: 16px;
+	font-family: inherit;
 }
 #bottom-section{
 	margin-bottom: 30px;
-	font-size: 18px;
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
 }
 #bottom-section article ul li span{
 	font-weight: 900;
+	font-family: inherit;
 }
 #bottom-section article ul li{
 	margin-bottom: 10px;
@@ -328,10 +346,11 @@ footer a:visited{
 .corporate-top{
 	margin-top: 100px;
 }
-.corporate-main-title{
+.corporate-main-title h1{
 	text-align: center;
 	color: #a02c18;
 	margin: 0px 0px 50px;
+	font-family: 'Libre Caslon Text', serif;
 }
 .corporate-image-box{
 	width: 1400px;
@@ -366,6 +385,7 @@ footer a:visited{
 	text-align: center;
 	color: #a02c18;
 	margin-bottom: 50px;
+	font-family: 'Libre Caslon Text', serif;
 }
 .sections article span{
 	font-weight: 900;
@@ -398,8 +418,9 @@ footer a:visited{
 }
 .bouquets-helpful-links{
 	text-align: center;
-	font-size: 16px;
+	font-size: 15px;
 	color: #af3800;
+	font-family: 'Roboto Slab', serif;
 }
 
 
@@ -416,9 +437,12 @@ footer a:visited{
 	text-align: center;
 	margin-bottom: 25px;
 	color: #af3800;
+	font-size: 28px;
+	font-family: 'Libre Caslon Text', serif;
 }
 .care-box p{
-	font-size: 18px;
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
 	text-align: justify;
 	margin-bottom: 20px;
 	color: #af3800;
@@ -426,7 +450,7 @@ footer a:visited{
 .care-img{
 	width: 90%;
 	height: 400px;
-	margin: auto;
+	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	background-image: url(../assets/images/plant_care-1504-1004.jpeg);
@@ -435,9 +459,11 @@ footer a:visited{
 .care-box h2{
 	margin-bottom: 20px;
 	color: #af3800;
+	font-family: 'Libre Caslon Text', serif;
 }
 .care-box ul li{
-	font-size: 18px;
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
 	margin-bottom: 10px;
 	color: #af3800;
 }
