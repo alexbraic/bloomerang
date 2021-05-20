@@ -248,11 +248,14 @@ footer table td{
 }
 .bouquets-main-box h1{
 	text-align: center;
+	padding-bottom: 50px;
+	color: #af3800;
 	font-family: 'Libre Caslon Text', serif;
 }
 .bouquets-main-box h2{
 	text-align: center;
 	font-family: 'Libre Caslon Text', serif;
+	font-size: 35px;
 	color: #a02c18;
 }
 .bouquets-main-box h3{
@@ -270,14 +273,6 @@ footer table td{
 	font-size: 18px;
 	color: #af3800;
 }
-.b-category-description{
-	text-align: center;
-}
-.bouquets-main-box h1{
-	text-align: center;
-	padding-bottom: 50px;
-	color: #af3800;
-}
 .category-divs{
 	padding: 50px 0px 25px 0px;
 }
@@ -293,9 +288,9 @@ footer table td{
 	text-align: center;
 	padding-top: 15px;
 }
-
 .bouquet-basket{
-	width: 100%;	
+	width: 100%;
+	padding-bottom: 50px;
 }
 .bouquet-category{
 	display: grid;
@@ -310,6 +305,7 @@ footer table td{
 	height: 267px;
 	width: 400px;
 }
+
 
 
 
