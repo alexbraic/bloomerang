@@ -35,4 +35,5 @@ $(document).ready(function() {
             $("#email-error-msg").css("background-color", "white");
         }
     });
+    
 });

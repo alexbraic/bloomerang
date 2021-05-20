@@ -283,6 +283,7 @@ footer table td{
 	padding-left: 8px;
 	padding-top: 8px;
 	border: 2px solid #af3800;
+	box-shadow: 10px 5px 5px rgba(39, 66, 84, .2);
 }
 .b-image-text{
 	text-align: center;
@@ -380,13 +381,16 @@ footer table td{
 	color: #af3800;
 	font-family: 'Raleway', sans-serif;
 }
-#wedding-form{
+.corporate-wedding-form{
 	margin-top: 20px;
+	margin-bottom: 50px;
 }
-
 
 /* ---------------------------------------------------------------------- */
 /* corporate page */
+#main-corporate-box{
+	padding-bottom: 50px;
+}
 .corporate-top{
 	margin-top: 100px;
 }
@@ -414,10 +418,6 @@ footer table td{
 	font-size: 18px;
 	text-align: center;
 	color: #af3800;
-}
-#corporate-form{
-	margin-top: 20px;
-	margin-bottom: 50px;
 }
 
 /* ---------------------------------------------------------------------- */
