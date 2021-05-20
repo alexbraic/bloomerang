@@ -77,41 +77,51 @@
 					<h3>Please fill the inquiry form</h3>
 					<p>We will contact you for a free consultation</p>
 				</div>
-                <div class="form-holder" class="corporate-wedding-form">
-                                                
-                    <form>
-                        <label for="name">Name
-                            <input 
-                                type="text"
-                                name="fullname"
-                                id="name"
-                                class="input-shape"
-                                placeholder="Enter your full name"
-                            >
-                        </label>
-                        <label for="email">Email address
-                            <input 
-                                type="email"
-                                name="email-address"
-                                id="email"
-                                class="input-shape"
-                                placeholder="Enter your email"
-                            >
-                        </label>
-                        <label for="phone">Phone number
-                            <input 
-                                type="text"
-                                name="phone-number"
-                                id="phone"
-                                class="input-shape"
-                                placeholder="Phone number"
-                            >
-                        </label>
-                        <label>Inquiry<span>(details suggestions: number of guests, location, date)</span>
-                            <textarea placeholder="Please add the details here"></textarea>
-                        </label>
-                        
-                        <input type="submit" class="submit-button" placeholder="Submit">
+                <div class="form-holder">                           
+                    <form class="corporate-wedding-form" method="post" action="#">
+						<div>
+							<label for="corp-name">Name</label>
+							<input 
+								type="text"
+								name="fullname"
+								id="corp-name"
+								class="input-shape"
+								placeholder="Enter your full name">
+						</div>
+                        <div>
+							<p class="error-message name-error-msg">Full name required.</p>
+						</div>
+						<div>
+							<label for="email">Email address</label>
+							<input 
+								type="email"
+								name="email-address"
+								id="corp-email"
+								class="input-shape"
+								placeholder="Enter your email">
+						</div>
+                        <div>
+							<p class="error-message email-error-msg">Email address required.</p>
+						</div>
+						<div>
+							<label for="phone">Phone number</label>
+							<input 
+								type="text"
+								name="phone-number"
+								id="phone"
+								class="input-shape"
+								placeholder="Phone number">
+						</div>
+                        <div>
+							<label>Inquiry<span>(details suggestions: number of guests, location, date)</span>
+								<textarea placeholder="Please add the details here"></textarea>
+							</label>
+						</div>
+                        <div>
+							<input type="submit" class="submit-button" placeholder="Submit" value="Submit">
+						</div>
+
+						<p class="error-list"> You have (<span class="error-count"></span>) errors.</p>
                     </form>
                 </div>
 			</main>	

@@ -60,32 +60,37 @@
 				</div>
 				<div id="contact-form-title">
 					<h2>Feedback form</h2>
-					<h3>Thank you for taking the time to fill out our survey!</h3>
+					<h3>Thank you for taking the time to fill in our survey!</h3>
 				</div>				
 
 				<div class="form-holder">
 					<form id="feedback-form" method="post" action="#">
-						<p class="error-message" id="name-error-msg"> Full name required.</p>
-
-						<label id="name-label" for="name-field" class="labels">Name</label>
-						<input 
+						<div>
+							<label for="name-field" class="labels">Full name</label>
+							<input 
 								type="text"
 								name="fullname"
 								id="name-field"
 								class="input-shape"
-								placeholder="Enter your name"><br>
-						<label id="email-label" for="email-field" class="labels">Email</label>
-						
-						<p class="error-message" id="email-error-msg"> Email address required.</p>
-						<input 
+								placeholder="Enter your name">
+						</div>
+						<div>
+							<p class="error-message name-error-msg">The name is required.</p>
+						</div>
+
+						<div>
+							<label for="email-field" class="labels">Email</label>
+							<input 
 								type="email"
 								name="email"
 								id="email-field"
 								class="input-shape"
-								placeholder="Enter your email"><br>
-
+								placeholder="Enter your email">
+						</div>
+						<div>
+							<p class="error-message email-error-msg"> Email address required.</p>
+						</div>
 						
-
 						<p class="contact-q">Would you recommend us to a friend?</p>
 						<label for="definitely">
 							<input
@@ -121,6 +126,7 @@
 						</select>
 
 						<p class="contact-q">What would you like to see more of in our workshops?</p>
+						
 						<input
 							type="checkbox"
 							id="idea1"
@@ -150,9 +156,8 @@
 						
 						<input type="submit" class="submit-button" value="Submit">
 						
-						<p id="error-list"> You have (<span id="error-count"></span>) errors.</p>
-						
-							
+						<p class="error-list"> You have (<span class="error-count"></span>) errors.</p>
+
 					</form>
 				</div>
 			</main>
