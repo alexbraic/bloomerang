@@ -44,7 +44,7 @@ $(document).ready(function() {
         
     });
 
-    $("#feedback-form").submit(function(event) {
+    $(".corporate-wedding-form").submit(function(event) {
         var is_error = false;
         var is_email_error = false;
         var is_fullname_error = false;
