@@ -40,12 +40,16 @@ $(document).ready(function() {
             $(".email-error-msg").css("border-top", "1px solid #e4644e");
         }
         
-        //hide error message and decrement counter
+        //hide error message and decrement counter when clicking inside input area.
+        //does not display error message once counter reaches 0
         $("#name-field").click(function(){
             $(".name-error-msg").css("visibility", "hidden");
             error_count -= 1;
             $("span.error-count").text(error_count);
             $("p.error-list").css("display", "block");
+            if (error_count <= 0) {
+                $("p.error-list").css("display", "none");
+            }
         });
     
         $("#email-field").click(function(){
@@ -53,6 +57,9 @@ $(document).ready(function() {
             error_count -= 1;
             $("span.error-count").text(error_count);
             $("p.error-list").css("display", "block");
+            if (error_count <= 0) {
+                $("p.error-list").css("display", "none");
+            }
         });
     });
 
@@ -61,6 +68,7 @@ $(document).ready(function() {
         var is_email_error = false;
         var is_fullname_error = false;
         var is_phone_error = false;
+        var is_details_error = false;
         var error_count = 0;
 
         var fullname = $(".form-name").val();
@@ -75,11 +83,16 @@ $(document).ready(function() {
             is_email_error = true;
             error_count += 1;
         }
-
         var phone = $(".phone-nr").val();
         if (phone == "") {
             is_error = true;
             is_phone_error = true;
+            error_count += 1;
+        }
+        var details = $(".detail-area").val();
+        if (details == "") {
+            is_error = true;
+            is_details_error = true;
             error_count += 1;
         }
 
@@ -96,7 +109,6 @@ $(document).ready(function() {
             $(".name-error-msg").css("color", "red");
             $(".name-error-msg").css("border-top", "1px solid #e4644e");
         }
-        
         if(is_email_error) {
             $(".email-error-msg").css("visibility", "visible");
             $(".email-error-msg").css("display", "block");
@@ -104,7 +116,6 @@ $(document).ready(function() {
             $(".email-error-msg").css("color", "red");
             $(".email-error-msg").css("border-top", "1px solid #e4644e");
         }
-        
         if (is_phone_error) {
             $(".phone-error-msg").css("visibility", "visible");
             $(".phone-error-msg").css("display", "block");
@@ -112,12 +123,23 @@ $(document).ready(function() {
             $(".phone-error-msg").css("color", "red");
             $(".phone-error-msg").css("border-top", "1px solid #e4644e");
         }
-
+        if(is_fullname_error) {
+            $(".details-error-msg").css("visibility", "visible");
+            $(".details-error-msg").css("display", "block");
+            $(".details-error-msg").css("background-color", "white");
+            $(".details-error-msg").css("color", "red");
+            $(".details-error-msg").css("border-top", "1px solid #e4644e");
+        }
+        //hide error message and decrement counter when clicking inside input area.
+        //does not display error message once counter reaches 0
         $(".form-name").click(function(){
             $(".name-error-msg").css("visibility", "hidden");
             error_count -= 1;
             $("span.error-count").text(error_count);
             $("p.error-list").css("display", "block");
+            if (error_count <= 0) {
+                $("p.error-list").css("display", "none");
+            }
         });
     
         $(".form-email").click(function(){
@@ -125,13 +147,29 @@ $(document).ready(function() {
             error_count -= 1;
             $("span.error-count").text(error_count);
             $("p.error-list").css("display", "block");
+            if (error_count <= 0) {
+                $("p.error-list").css("display", "none");
+            }
         });
 
         $(".phone-nr").click(function(){
-            $(".email-error-msg").css("visibility", "hidden");
+            $(".phone-error-msg").css("visibility", "hidden");
             error_count -= 1;
             $("span.error-count").text(error_count);
             $("p.error-list").css("display", "block");
+            if (error_count <= 0) {
+                $("p.error-list").css("display", "none");
+            }
+        });
+
+        $(".detail-area").click(function() {
+            $(".details-error-msg").css("visibility", "hidden");
+            error_count -= 1;
+            $("span.error-count").text(error_count);
+            $("p.error-list").css("display", "block");
+            if (error_count <= 0) {
+                $("p.error-list").css("display", "none");
+            }
         });
     });
 });
