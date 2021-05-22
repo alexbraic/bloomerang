@@ -6,7 +6,8 @@
 		<meta name="description" content="Flower bouquets and arrangements for public and private events made by professional florists in their Ballsbridge shop, delivered through Dublin and Leinster.">
 		<meta name="keywords" content="bloomerang, florists, baggot street">
 		<meta name="viewport" content="Width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&family=Pattaya&family=Roboto+Slab&display=swap" rel="stylesheet">		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&family=Pattaya&family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/styles.css">
 	</head>
 	<body>
@@ -104,36 +105,50 @@
                     </div>
                     <div  class="form-holder">                         
                         <form class="corporate-wedding-form" method="post" action="#">
-                            <label for="name">Name</label>
-                            <input 
-								type="text"
-								name="fullname"
-								id="name"
-								class="input-shape"
-								placeholder="Enter your full name">
-                            <label for="email">Email address
+							<div>
+								<label for="wedding-name">Name</label>
+                            	<input 
+									type="text"
+									name="fullname"
+									id="wedding-name"
+									class="input-shape form-name"
+									placeholder="Enter your full name">
+							</div>
+							<div>
+								<p class="error-message name-error-msg">Full name required.</p>
+							</div>
+                            <div>
+								<label for="wedding-email">Email address</label>
                                 <input 
                                     type="email"
                                     name="email-address"
-                                    id="email"
-                                    class="input-shape"
-                                    placeholder="Enter your email"
-                                >
-                            </label>
-                            <label for="phone">Phone number
-                                <input 
-                                    type="text"
-                                    name="phone-number"
-                                    id="phone"
-                                    class="input-shape"
-                                    placeholder="Phone number"
-                                >
-                            </label>
-                            <label>Inquiry<span>(details suggestions: number of guests, location, date)</span>
-                                <textarea placeholder="Please add the details here"></textarea>
-                            </label>
-                            
-                            <input type="submit" class="submit-button" placeholder="Submit">
+                                    id="wedding-email"
+                                    class="input-shape form-email"
+                                    placeholder="Enter your email">
+							</div>
+							<div>
+								<p class="error-message email-error-msg">Email address required.</p>
+							</div>
+							<div>
+								<label for="wedding-phone">Phone number</label>
+									<input 
+										type="text"
+										name="phone-number"
+										id="wedding-phone"
+										class="input-shape phone-nr"
+										placeholder="Phone number">
+							</div>
+							<div>
+								<p class="error-message phone-error-msg">Phone number required.</p>
+							</div>
+                            <div>
+								<label>Inquiry<span>(details suggestions: number of guests, location, date)</span>
+									<textarea placeholder="Please add the details here"></textarea>
+								</label>
+                            </div>
+							<div>
+								<input type="submit" class="submit-button" placeholder="Submit">
+							</div>
                             
 							<p class="error-list"> You have (<span class="error-count"></span>) errors.</p>
                         </form>
