@@ -749,9 +749,28 @@ p.error-list{
 		width: 90%;
 		height: auto;
 	}
-	/* bouquets page */
-	
 
+	/* bouquets page */
+	main.bouquets-main-box{
+		width: 100%;
+		margin-top: 150px;
+		height: auto;
+		padding: 20px;
+	}
+	.bouquet-category{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.b-image-tile{
+		width: 100%;
+		height: auto;
+		
+	}
+	.b-image-tile img{
+		width: 97%;
+		height: auto;		
+	}
 
 	/* wedding page */
 	.description-text{
@@ -773,6 +792,48 @@ p.error-list{
 		width: 100%;
 		height: auto;
 		margin: 0 auto;
+	}
+
+	/* corporate page */
+	#main-corporate-box{
+		margin-top: 250px;
+		float: none;
+		display: block;
+	}
+	.corporate-image-box{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.corporate-top{
+		width: 90%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	.corporate-image{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	/* workshops */
+	.workshop-image-box{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.workshop-image{
+		width: 90%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+		
+	}
+	.workshop-image div{
+		margin-top: 10px;
+		padding-top: 0px;
+		padding-left: 0px;
 	}
 }
 
