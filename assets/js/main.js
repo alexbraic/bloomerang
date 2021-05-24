@@ -84,11 +84,12 @@ $(document).ready(function() {
             error_count += 1;
         }
         var phone = $(".phone-nr").val();
-        if (phone == "") {
+        if (phone == "" || phone == " " || phone.length != 10) {
             is_error = true;
             is_phone_error = true;
             error_count += 1;
         }
+
         var details = $(".detail-area").val();
         if (details == "") {
             is_error = true;
@@ -123,13 +124,14 @@ $(document).ready(function() {
             $(".phone-error-msg").css("color", "red");
             $(".phone-error-msg").css("border-top", "1px solid #e4644e");
         }
-        if(is_fullname_error) {
+        if(is_details_error) {
             $(".details-error-msg").css("visibility", "visible");
             $(".details-error-msg").css("display", "block");
             $(".details-error-msg").css("background-color", "white");
             $(".details-error-msg").css("color", "red");
             $(".details-error-msg").css("border-top", "1px solid #e4644e");
         }
+    
         //hide error message and decrement counter when clicking inside input area.
         //does not display error message once counter reaches 0
         $(".form-name").click(function(){
