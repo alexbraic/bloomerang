@@ -34,27 +34,36 @@ footer{
 	text-align: center;
 }
 
-/* ---------------------------------------------------------------------- */
-/* header */
-.fixed-header{
-	position: relative;
-	width: 100%;
-}
 
 /* ---------------------------------------------------------------------- */
 /* NAV LINKS */
 #logo-box{
-	position: absolute;
+	float: left;
 	left: 20px;
-	top: 5px;
-	height: 50px;
-	width: 50px;
-	background: red;
+	height: 0px;
 	font-family: 'Pattaya', sans-serif;
 	color: #af3800;
 }
-#logo-box p{
-	margin-top: 8px;
+#lg-box{
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 50px;
+	height: 50px;
+}
+#logo-box img{
+	width: 50px;
+	height: 50px;
+}
+#logo-box a{
+	float: left;
+	font-size: 40px;
+	font-family: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+#logo-name{
+	margin-left: -10px;
 }
 .navigation{
 	float: right;
@@ -65,11 +74,7 @@ footer{
 	width: 100%;
 	font-weight: 900;
 }
-p#logo-name{
-	padding-left: 60px;
-	line-height: 1.2;
-	font-size: 37px;
-}
+
 ul.nav-links{
 	float: right;
 	
