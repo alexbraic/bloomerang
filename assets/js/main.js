@@ -4,6 +4,8 @@ $(document).ready(function() {
         var is_email_error = false;
         var is_fullname_error = false;
         var error_count = 0;
+        var no_radio = false;
+        var none_checked = false;
 
         var fullname = $("#name-field").val();
         if (fullname == ""){
@@ -18,10 +20,24 @@ $(document).ready(function() {
             error_count += 1;
         }
 
+        if($("input[type=radio]:checked").length == 0) {
+            is_error = true;
+            no_radio = true;
+            error_count += 1;
+        }
+
+        if($("input[type=checkbox]:checked").length == 0) {
+            is_error = true;
+            none_checked = true;
+            error_count += 1;   
+        }
+        //prevent submission on is_error == true and give thank you message on successful submission
         if (is_error) {
             $("span.error-count").text(error_count);
             $("p.error-list").css("display", "block");
             event.preventDefault();
+        } else {
+            alert("Your feedback is appreciated, thank you!");
         }
 
         if(is_fullname_error) {
@@ -39,7 +55,22 @@ $(document).ready(function() {
             $(".email-error-msg").css("color", "red");
             $(".email-error-msg").css("border-top", "1px solid #e4644e");
         }
-        
+
+        if(no_radio) {
+            $(".radio-error-msg").css("visibility", "visible");
+            $(".radio-error-msg").css("display", "block");
+            $(".radio-error-msg").css("background-color", "white");
+            $(".radio-error-msg").css("color", "red");
+            $(".radio-error-msg").css("border-top", "1px solid #e4644e");
+        }
+
+        if (none_checked) {
+            $(".checkbox-error-msg").css("visibility", "visible");
+            $(".ckeckbox-error-msg").css("display", "block");
+            $(".checkbox-error-msg").css("background-color", "white");
+            $(".ckeckbox-error-msg").css("color", "red");
+            $(".ckeckbox-error-msg").css("border-top", "1px solid #e4644e");
+        }
         //hide error message and decrement counter when clicking inside input area.
         //does not display error message once counter reaches 0
         $("#name-field").click(function(){
@@ -61,8 +92,19 @@ $(document).ready(function() {
                 $("p.error-list").css("display", "none");
             }
         });
+
+        $("#feedback-form").click(function() {
+            $(".radio-error-msg").css("visibility", "hidden");
+            error_count -= 1;
+        });
+
+        $("#feedback-form").click(function() {
+            $(".checkbox-error-msg").css("visibility", "hidden");
+            error_count -= 1;
+        });
     });
 
+    // wedding and corporate pages form
     $(".corporate-wedding-form").submit(function(event) {
         var is_error = false;
         var is_email_error = false;

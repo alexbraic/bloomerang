@@ -618,6 +618,22 @@ footer table td{
 	visibility: hidden;
 	border-radius: 3px;
 }
+.radio-error-msg{
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	padding-left: 5px;
+	color: red;
+	visibility: hidden;
+	border-radius: 3px;
+}
+.checkbox-error-msg{
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	padding-left: 5px;
+	color: red;
+	visibility: hidden;
+	border-radius: 3px;
+}
 p.contact-q{
 	padding-left: 5px;
 	font-size: 20px;
@@ -634,7 +650,6 @@ p.contact-q{
 }
 .recommend-us{
 	margin-left: 5px;
-	margin-bottom: 20px;
 }
 .options{
 	margin-left: 15px;
