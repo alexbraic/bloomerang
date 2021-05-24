@@ -835,5 +835,26 @@ p.error-list{
 		padding-top: 0px;
 		padding-left: 0px;
 	}
+
+	/* contact page */
+	.contact-info address{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	#store-front{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	#store-front img{
+		width: 90%;
+		height: auto;
+	}
+	#contact-form-title{
+		width: 100%;
+		height: auto;
+		padding-bottom: 5px;
+	}
 }
 
