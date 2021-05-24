@@ -69,7 +69,6 @@ footer{
 	float: right;
 	position: relative;
 	top: 60px;
-	/* background-color: #89b0ae; */
 	background-color: #e9806e;
 	width: 100%;
 	font-weight: 900;
@@ -112,6 +111,20 @@ li.nav-link-button a:hover{
 li.nav-link-button a:active {
 	color: white;
 }
+
+
+.reduced-header-box{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+.reduced-header-inner{
+	display: none;
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+
 
 /* ---------------------------------------------------------------------- */
 /* footer */
@@ -678,7 +691,7 @@ p.error-list{
 }
 
 /* small screen responsiveness */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	.form-holder{
 		width: 90%;
 		margin: 0 auto;
