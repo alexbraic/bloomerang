@@ -152,6 +152,9 @@ footer table{
 footer a:visited{
 	color: white;
 }
+footer a:link{
+	color: white;
+}
 footer table td{
 	text-align: center;
 }
